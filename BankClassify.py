@@ -212,6 +212,13 @@ class BankClassify():
 
         return df
 
+    def _read_newcastlepermanent(self, filename):
+
+
+        df = pd.DataFrame({'date':dates, 'desc':descs, 'amount':amounts})
+
+        return df
+
     def _read_santander_file(self, filename):
         """Read a file in the plain text format that Santander provides downloads in.
 
